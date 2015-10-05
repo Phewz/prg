@@ -1,2 +1,2 @@
 # prg
-Anwendung zur Erstellung von Klängen oder Rhythmen durch Abspielen vorbestimmter Samples via Maus oder Tastatur. 
+Anwendung zur Erstellung von Klängen oder Rhythmen durch Abspielen vorbestimmter Samples via Maus oder Tastatur. Vgl. Drum Machine
