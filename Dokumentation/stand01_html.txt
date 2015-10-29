@@ -1,2 +1,43 @@
+Die Anwendung ist auf eine einzige Ansicht reduziert, die beim öffnen der Anwendung direkt erscheint. 
+Die gesamte Anwendung ist ohne Scrollen im Ganzen sichtbar.
+Dies ermöglicht dem Nutzer einen einfachen Überblick über die Anwendung und 
+somit eine schnelle Einarbeitung und ein gutes Verständnis der Funktionen.
+Der Nutzer soll so das Gefühl vermittelt bekommen, eine Art “analoges Gerät” vor 
+sich liegen zu haben, wie etwa ein Musikinstrument. 
 
-test
+
+Die Benutzeroberfläche besteht aus 3 Hauptbestandteilen, die bei dem Anwendungsprozess 
+in der Regel in der folgenden Reihenfolge behandelt werden.
+
+
+1. Der interaktive Browser
+
+Im Browser kann der Nutzer in einem Menü kurze Audiosamples (wie z.B. ein Trommelschlag) 
+auswählen und diese per Mouseclick oder per Tastatur anspielen, um sie miteinander vergleichen, 
+und schließlich für den weiteren Prozess auswählen zu können. Durch die Abspielmöglichkeit 
+der Dateien in echtzeit, ist es dem Nutzer möglich das Audiosample anzuhören und somit testen zu können.
+Optional kann der Nutzer zwischen einer Hand voll vorgegebener “Kits” wählen. 
+Hierdurch wird eine festgelegte Zusammensetzung aus Audiosamples ausgewählt. 
+
+
+2. Die Performance-Region
+
+Die Performance-Region stellt einen sog. “Sequenzer” dar. Die im Browser ausgewählte Audiodatei, kann in 
+der Performance-Region individuell auf die 16 Speicherplätze abgelegt werden. Beim Durchlaufen der Sequenz, 
+wird die Audiodatei an der entsprechenden Stelle automatisch abgespielt. Eben zu dem Zeitpunkt, an dem die 
+Sequenz an dem belegten Speicherplatz vorbeikommt.
+Durch das gleichbleibende Abspieltempo der Sequenz und das Belegen der 16 Schläge mit verschiedenen Samples, 
+entstehen musikalische Rythmen, die von dem Nutzer frei kreiert werden können.
+
+
+3. Die Mixing-Region
+
+In der Mixing-Region lassen sich in Form von Reglern, die einzelnen verwendete Samples, individuell vom 
+Nutzer mithilfe folgender Parameter klanglich beeinflussen: 
+
+	a) Lautstärkeregler der einzelnen Samples
+	b) Panningregler der einzelnen Samples 
+	c) BPM (Beats Per Minute)-Anzeige - das Tempo, in dem die Sequenz abgespielt werden soll
+	d) Hi- und Low-Cut Filter - Regler 
+	e) Reverb und Delay - Regler
+
