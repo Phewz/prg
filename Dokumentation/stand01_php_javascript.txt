@@ -35,7 +35,7 @@
   Die Lautstärke der jeweiligen Elemente sowie des Masters lässt sich einstellen. 
 
   c) Panning:
-  Die einzelnen Samples lassen sich durch den Panning-Regler zur Verteilung im Stereofeld so bearbeiten, dass sie links oder      rechts lauter oder leiser sind.
+  Die einzelnen Samples lassen sich durch den Panning-Regler zur Verteilung im Stereofeld so bearbeiten, dass sie links oder rechts lauter oder leiser sind.
      
   d) Effekte:
   Klangliche Veränderung der ausgewählten Sounds.
