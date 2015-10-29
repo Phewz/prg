@@ -40,4 +40,4 @@ Nutzer mithilfe folgender Parameter klanglich beeinflussen:
 	c) BPM (Beats Per Minute)-Anzeige - das Tempo, in dem die Sequenz abgespielt werden soll
 	d) Hi- und Low-Cut Filter - Regler 
 	e) Reverb und Delay - Regler
-
+ 
