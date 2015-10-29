@@ -1,1 +1,47 @@
+1. Interaktiver Browser
 
+  a) Pattern-Auswahl: 
+	   Auswahl von verschiedenen vorgegebenen oder gespeicherten Patterns.
+	   Ein Pattern ist die Belegung der jeweiligen Abspielreihenfolge der Samples.
+	   
+  b) Kit-/Sample-Auswahl:
+     Auswahl von verschiedenen Samples/Kits, welche durch Mausklicks/Touch oder Tastatur abspielbar sind.
+     Elemente:
+     Kick, Closed Hihat, Open Hihat, Ride, Snare, Shaker, Clap, Perc, Tom1, Tom2, Tom3
+
+
+2. Performance Region
+
+  a) Start-Stop Button: 
+	   Startet die Sequenz mit ausgewähltem Tempo in BPM (Beats per Minute)
+	   
+  b) Tempo Button/Regler:
+		 Gibt dem Sequencer die Geschwindigkeit in BPM (Beats per Minute) vor.
+		 
+  c) Step Sequencing:
+	   Es gibt eine Sequenz von 4 Takten mit je 4 Schlägen. Die Sequenz wird mit dem vorgespielten Tempo abgespielt. Nach einem        Durchlauf wird diese wieder von vorne abgespielt. 
+	   Es handelt sich hier also um eine sich wiederholende Sequenz aus insgesamt 16 Schlägen in einem 4/4 Takt. 
+	   
+  d) Save Pattern:
+     Das erstellte Pattern wird im Cache gespeichert, sodass man nach erneutem Aufrufen der Seite weiter am Pattern arbeiten         kann.
+
+
+3. Mixing Region
+
+  a) Audio Signal Routing:
+     Ausgabe der ausgewählten Sounds.	
+
+  b) Lautstärke Regelung:
+	   Die Lautstärke der jeweiligen Elemente sowie des Masters lässt sich einstellen. 
+
+  c) Panning:
+     Die einzelnen Samples lassen sich durch den Panning-Regler zur Verteilung im Stereofeld so bearbeiten, dass sie links oder      rechts lauter oder leiser sind.
+     
+  d) Effekte:
+	   Klangliche Veränderung der ausgewählten Sounds.
+     Tune (Tonhöhe), Volume, Reverb/Hall, Delay, Frequenzbearbeitung Hi- und Low-Cut,..
+     Jedes Sample lässt sich dabei unabhängig von den anderen verfremden.
+     Dadurch lassen sich die erstellten Sequenzen noch individueller gestalten.
+     
+  e) WAV-Export:
+	   Das angefertigte Pattern wird im Loop aufgenommen, als WAV exportiert und zum Download angeboten.
