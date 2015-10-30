@@ -1,6 +1,11 @@
+body, html{
+  min-height: 100%;
+}
+
 body {
   background: url("../images/background1.jpg");
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*
