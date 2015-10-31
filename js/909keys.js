@@ -1,3 +1,10 @@
+/*
+Bisher gilt dies nur für ein Kit, es gibt wohl auch eine Möglichkeit dies per Selektor umzusetzen
+Hierbei lässt sich dann wie geplant zwischen verschiedenen Sample-Kits auswählen.
+Ich baue das die Tage ein. Wichtig ist, dass das hier erst mal läuft. Besprechen wir beim nächsten Treffen.  
+*/
+
+
 // Kick 909
 (function(){
 
@@ -5,7 +12,7 @@ var context = new AudioContext();
 var kick;
 var getSound = new XMLHttpRequest(); // Sample wird per XMLHttpRequest geladen
 getSound.open("GET", "sounds/909/Kick-909.wav", true);
-getSound.responseType = "arraybuffer"; // umwandlung in binärd.
+getSound.responseType = "arraybuffer"; // umwandlung in binärdarstellung
 getSound.onload = function() {
   context.decodeAudioData(getSound.response, function(buffer){
     kick = buffer; // Audio in einer Variable speichern.
