@@ -58,6 +58,6 @@ window.addEventListener('load', function() {
     text = 'Loading Drum Machine', m = context.measureText(text);
     context.fillText(text + qdots[Math.floor(d / 180)], (x - (m.width / 2)), y);
 
-    requestAnimFrame(test); // polyfill in codepen-utilities.js
+    requestAnimFrame(test);
   }());
 })
