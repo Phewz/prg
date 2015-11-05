@@ -1,3 +1,7 @@
+* {
+	border: 1px dashed black;
+}
+
 body, html{
   min-height: 100%;
 }
@@ -6,6 +10,11 @@ body {
   background: url("../images/background1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: black;
 }
 
-/*
+.knob{
+	height: 5em;
+  min-height: 50%;
+  display: inline-block;
+}
