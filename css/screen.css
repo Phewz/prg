@@ -1,22 +1,20 @@
 * {
-	border: 2px dashed black;
+	border: 1px dashed black;
+}
+
+body, html{
+  min-height: 100%;
 }
 
 body {
-  background: url("../images/background3.jpg");
-  background-size: auto;
+  background: url("../images/background1.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
-	margin: 1%;
 }
 
-#device{
-	border: 3px dashed green;
-	background-image: url("../images/device1.png");
-	background-size: 85em;
-	background-repeat: no-repeat;
-	height: 46em;
-	width: 69em;
-	margin: 1%;
-	padding: 1.5em 8em 1.5em 8em;
+.knob{
+	height: 5em;
+  min-height: 50%;
+  display: inline-block;
 }
