@@ -1,20 +1,34 @@
 * {
-	border: 1px dashed black;
+	border: 1px dashed blue;
 }
 
-body, html{
-  min-height: 100%;
+html{
+	height: 100%;
 }
 
 body {
-  background: url("../images/background1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
+  background: url("../images/background3.jpg");
+  background-size: auto;
+	background-repeat: no-repeat;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
-.knob{
-	height: 5em;
-  min-height: 50%;
-  display: inline-block;
+#devicebody{
+	background-image: url("../images/device1.png");
+	background-size: 85em;
+	background-repeat: no-repeat;
+	height: 49.1em;
+	width: 85em;
+	margin: auto;
+
+}
+
+#devicecontent{
+	margin-top: 0; /*Positionierung des contents auf der Silbernen Platte*/
+
 }
