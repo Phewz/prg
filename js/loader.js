@@ -1,4 +1,5 @@
-// To Do: In HTML integrieren, Test ob * funktioniert
+// To Do: In HTML integrieren, Test ob * funktioniert. Derzeit noch nicht auf aktuellen Ladestand abgestimmt
+// nimmt außerdem das komplette Fenster ein. Test mit Logo + Schrift im Bild hat nicht funktioniert, da muss noch geschaut werden wie man das Logo am Besten einbindet.
 
 var qdots = ["", ".", "..", "..."];
 
@@ -36,7 +37,7 @@ window.addEventListener('load', function() {
         y = .5 + canvas.height / 2,
         d = (((time || Date.now()) / 3) % 720),
         text, m;
-
+// kreis, font, textausrichtung 
     context.lineCap = 'round';
     context.lineWidth = 3;
     context.font = '500 14px Futura';
@@ -53,6 +54,7 @@ window.addEventListener('load', function() {
       context.strokeStyle = context.fillStyle = '#cecece';
       context.stroke();
     context.closePath();
+    
     // bug **
     show_image;
     text = 'Loading Drum Machine', m = context.measureText(text);
