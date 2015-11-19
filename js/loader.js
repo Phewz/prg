@@ -1,16 +1,17 @@
 // To Do: In HTML integrieren, Test ob * funktioniert. Derzeit noch nicht auf aktuellen Ladestand abgestimmt
 // nimmt außerdem das komplette Fenster ein. Test mit Logo + Schrift im Bild hat nicht funktioniert, da muss noch geschaut werden wie man das Logo am Besten einbindet.
+// Anpassung für responsive folgen in Absprache mit Alex.
 
 var qdots = ["", ".", "..", "..."];
 
-// ** bug -v
+// ** bug -v (es muss noch gelöst werden, dass man das Logo einbindet. Bisher habe ich keine zufriedenstellende Lösung gefunden.)
 function show_image(src) {
     var logo = document.createElement("logo");
     logo.src = "images/Logo.png";
 
     document.body.appendChild(img);
 }
-// ** but ^-
+// ** bug ^-
 window.addEventListener('load', function() {
   var canvas = document.createElement("canvas"),
       context = canvas.getContext('2d');
@@ -37,7 +38,7 @@ window.addEventListener('load', function() {
         y = .5 + canvas.height / 2,
         d = (((time || Date.now()) / 3) % 720),
         text, m;
-// kreis, font, textausrichtung 
+// kreis, font, textausrichtung, Futura oder gar Helvetica? zu testen: Webfonts
     context.lineCap = 'round';
     context.lineWidth = 3;
     context.font = '500 14px Futura';
