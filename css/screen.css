@@ -29,11 +29,12 @@ body {
 	height: 49.1em;
 	width: 85em;
 	margin: auto;
-	color: #FFFFFF;
+	
 
 }
 
 #devicecontent{
 	margin-top: 0; /*Positionierung des contents auf der Silbernen Platte*/
+	color: #FFFFFF;
 
 }
