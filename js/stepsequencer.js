@@ -7,6 +7,11 @@ Es handelt sich hier also um eine sich wiederholende Sequenz aus insgesamt 16 Sc
 
 tempo gibt geschwindigkeit in BPM an. Auslagerung in clock.js?
 
+wichtige Info: derzeit noch komplett verbuggt. Weiter ausgearbeiteter Stand ist mit SSD Crash verloren gegangen, 
+da in der letzten Stunde vor Crash kein Commit gesendet wurde. Aber: Notizen sind noch vorhanden. 
+Wird eingebaut sobald Ersatz-SSD da ist! Treffen am Freitag + Samstag steht jedoch noch! @Alex.
+Pizza bestelle ich :>
+
  */
 
  (function(){
