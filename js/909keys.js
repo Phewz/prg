@@ -2,6 +2,9 @@
 Bisher gilt dies nur für ein Kit, es gibt wohl auch eine Möglichkeit dies per Selektor umzusetzen
 Hierbei lässt sich dann wie geplant zwischen verschiedenen Sample-Kits auswählen.
 Ich baue das die Tage ein. Wichtig ist, dass das hier erst mal läuft. Besprechen wir beim nächsten Treffen.  
+Die Tastenanschläge sind nicht direkt für das Endprodukt geplant, da dies nicht systemunabhängig ist. 
+Diese wurden eingebaut um die Funktion zu testen. Smartphone-Ersatz ist geplant.
+// X oder // Y etc. geben die zu drückende Taste an. 
 */
 
 
