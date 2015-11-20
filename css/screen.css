@@ -1,10 +1,8 @@
 /*
-Fab: ich habe die dashed outline mal ausgeblendet, sieht schrecklich aus :)
 * {
-	border: 1px dashed blue;
-}
-
-*/
+	border: 1px dashed blue; /* zur Orientierung bei Padding- und Margineinstellungen 
+	}
+	*/
 
 html{
 	height: 100%;
