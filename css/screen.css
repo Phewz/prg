@@ -9,7 +9,7 @@ html{
 }
 
 body {
-  background: url("../images/GUI-Skizze.jpg");
+  background: url("../images/background3");
   background-size: auto;
 	background-repeat: no-repeat;
 	background-color: black;
@@ -21,7 +21,7 @@ body {
 }
 
 #devicebody{
-	background-image: url("../images/device1.png");
+	background-image: url("../images/GUI-Skizze.jpg");
 	background-size: 85em;
 	background-repeat: no-repeat;
 	height: 49.1em;
