@@ -1,6 +1,6 @@
 /*
 * {
-	border: 1px dashed blue; /* zur Orientierung bei Padding- und Margineinstellungen 
+	border: 1px dashed blue; /* zur Orientierung bei Padding- und Margineinstellungen
 	}
 	*/
 
@@ -27,12 +27,51 @@ body {
 	height: 49.1em;
 	width: 85em;
 	margin: auto;
-	
+
 
 }
 
 #devicecontent{
+	overflow: auto;
 	margin-top: 0; /*Positionierung des contents auf der Silbernen Platte*/
-	
+}
 
+#trigger1{
+	height: 4em;
+	width: 5em;
+	background-color: #ffffcc;
+	border-radius: 0.2em;
+	margin-top: 4.6%;
+	margin-left: 8.5%;
+	margin-bottom: 0.8%;
+	-webkit-box-shadow: -0.1em 0.1em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	-moz-box-shadow: -0.1em 0.1em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	box-shadow: -0.1em 0.1em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	display: inline-block;
+}
+
+#trigger1:active{
+	-webkit-box-shadow: -0.07em 0.07em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	-moz-box-shadow: -0.07em 0.07em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	box-shadow: -0.07em 0.07em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+}
+
+.triggers{
+	height: 4em;
+	width: 5em;
+	background-color: #ffffcc;
+	border-radius: 0.2em;
+	margin-top: 4.6%;
+	margin-left: 0.8%;
+	margin-bottom: 0.8%;
+	-webkit-box-shadow: -0.1em 0.1em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	-moz-box-shadow: -0.1em 0.1em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	box-shadow: -0.1em 0.1em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	display: inline-block;
+}
+
+.triggers:active{
+	-webkit-box-shadow: -0.07em 0.07em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	-moz-box-shadow: -0.07em 0.07em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	box-shadow: -0.07em 0.07em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
 }
