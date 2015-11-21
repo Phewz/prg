@@ -1,10 +1,14 @@
 /*
 Bisher gilt dies nur für ein Kit, es gibt wohl auch eine Möglichkeit dies per Selektor umzusetzen
 Hierbei lässt sich dann wie geplant zwischen verschiedenen Sample-Kits auswählen.
-Ich baue das die Tage ein. Wichtig ist, dass das hier erst mal läuft. Besprechen wir beim nächsten Treffen.  
-Die Tastenanschläge sind nicht direkt für das Endprodukt geplant, da dies nicht systemunabhängig ist. 
+Ich baue das die Tage ein. Wichtig ist, dass das hier erst mal läuft. Besprechen wir beim nächsten Treffen.
+Die Tastenanschläge sind nicht direkt für das Endprodukt geplant, da dies nicht systemunabhängig ist.
 Diese wurden eingebaut um die Funktion zu testen. Smartphone-Ersatz ist geplant.
-// X oder // Y etc. geben die zu drückende Taste an. 
+// X oder // Y etc. geben die zu drückende Taste an.
+
+addon 21.11:
+sounds per klick/touch auf triggerpads.
+
 */
 
 
@@ -24,6 +28,7 @@ getSound.onload = function() {
 getSound.send(); // Anfrage + Sample laden
 
 window.addEventListener("keydown",onKeyDown); // Event Listener für Tastendruck
+window.addEventListener("click",onClick); // Event Listener für Triggerpad
 
 function onKeyDown(e){
   switch (e.keyCode) {
@@ -36,6 +41,14 @@ function onKeyDown(e){
     break;
   }
 }
+
+
+function onClick(){
+
+
+
+}
+
 }());
 
 // HihatOpen-909
