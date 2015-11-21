@@ -44,19 +44,16 @@ function onKeyDown(e){
       playSound.buffer = kick;
       playSound.connect(context.destination);  // Sample mit Ausgabe koppeln
       playSound.start(0); // sofort abspielen delay(0)
-    break;
+      break;
   }
 }
 
-// to do: play sound onClick/touch
-function onClick(){
+// to do: play sound onClick/touch DONE!!!
+function onClick(e){
   var playSound = context.createBufferSource();
   playSound.buffer = kick;
   playSound.connect(context.destination);
   playSound.start(0);
-  break;
-
-
 }
 
 }());
@@ -78,6 +75,7 @@ getSound.onload = function() {
 getSound.send();
 
 window.addEventListener("keydown",onKeyDown);
+document.getElementById("trigger2").addEventListener("click",onClick); // Event Listener für Triggerpad 2
 
 function onKeyDown(e){
   switch (e.keyCode) {
@@ -90,6 +88,15 @@ function onKeyDown(e){
     break;
   }
 }
+
+// to do: play sound onClick/touch DONE!!!
+function onClick(e){
+  var playSound = context.createBufferSource();
+  playSound.buffer = openHH;
+  playSound.connect(context.destination);
+  playSound.start(0);
+}
+
 }());
 
 // HihatClosed-909
@@ -109,6 +116,7 @@ getSound.onload = function() {
 getSound.send();
 
 window.addEventListener("keydown",onKeyDown);
+document.getElementById("trigger3").addEventListener("click",onClick); // Event Listener für Triggerpad 3
 
 function onKeyDown(e){
   switch (e.keyCode) {
@@ -121,6 +129,15 @@ function onKeyDown(e){
     break;
   }
 }
+
+// to do: play sound onClick/touch DONE!!!
+function onClick(e){
+  var playSound = context.createBufferSource();
+  playSound.buffer = closedHH;
+  playSound.connect(context.destination);
+  playSound.start(0);
+}
+
 }());
 
 // Clap
@@ -140,6 +157,7 @@ getSound.onload = function() {
 getSound.send();
 
 window.addEventListener("keydown",onKeyDown);
+document.getElementById("trigger4").addEventListener("click",onClick); // Event Listener für Triggerpad 4
 
 function onKeyDown(e){
   switch (e.keyCode) {
@@ -152,4 +170,13 @@ function onKeyDown(e){
     break;
   }
 }
+
+function onClick(e){
+  var playSound = context.createBufferSource();
+  playSound.buffer = clap;
+  playSound.connect(context.destination);
+  playSound.start(0);
+}
+
+
 }());
