@@ -48,9 +48,13 @@ function onKeyDown(e){
   }
 }
 
-
+// to do: play sound onClick/touch
 function onClick(){
-
+  var playSound = context.createBufferSource();
+  playSound.buffer = kick;
+  playSound.connect(context.destination);
+  playSound.start(0);
+  break;
 
 
 }
