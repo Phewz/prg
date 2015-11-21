@@ -9,6 +9,12 @@ Diese wurden eingebaut um die Funktion zu testen. Smartphone-Ersatz ist geplant.
 addon 21.11:
 sounds per klick/touch auf triggerpads.
 
+html elemente:
+trigger1 = Kick
+trigger2 = HihatOpen-909
+trigger3 = HihatClosed-909
+trigger4 = Clap
+
 */
 
 
@@ -28,7 +34,7 @@ getSound.onload = function() {
 getSound.send(); // Anfrage + Sample laden
 
 window.addEventListener("keydown",onKeyDown); // Event Listener für Tastendruck
-window.addEventListener("click",onClick); // Event Listener für Triggerpad
+document.getElementById("trigger1").addEventListener("click",onClick); // Event Listener für Triggerpad 1
 
 function onKeyDown(e){
   switch (e.keyCode) {
