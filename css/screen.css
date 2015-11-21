@@ -1,15 +1,10 @@
-/*
-* {
-	border: 1px dashed blue; /* zur Orientierung bei Padding- und Margineinstellungen
-	}
-	*/
-
 *{
 	/*prevent user to select elements*/
 	-webkit-appearance: none;
 	-webkit-user-select: none; /* Chrome/Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none;
+	/*border: 1px dashed blue; /* zur Orientierung*/
 }
 
 html{
@@ -45,6 +40,7 @@ body {
 }
 
 #trigger1{
+	vertical-align: top;
 	height: 4em;
 	width: 5em;
 	background-color: #ffffcc;
@@ -65,6 +61,7 @@ body {
 }
 
 .triggers{
+	vertical-align: top;
 	height: 4em;
 	width: 5em;
 	background-color: #ffffcc;
@@ -84,6 +81,9 @@ body {
 	box-shadow: -0.05em 0.05em 0.15em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
 }
 
-* {
-color: #ffffff;
+/*triggerpad Buchstaben @W*/
+p{
+	margin:auto;
+	text-align: center;
+	font-size: 150%;
 }
