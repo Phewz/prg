@@ -12,6 +12,8 @@ da in der letzten Stunde vor Crash kein Commit gesendet wurde. Aber: Notizen sin
 Wird eingebaut sobald Ersatz-SSD da ist! Treffen am Freitag + Samstag steht jedoch noch! @Alex.
 Pizza bestelle ich :>
 
+HTML IDs wie besprochen
+
  */
 
  (function(){
