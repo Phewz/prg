@@ -15,6 +15,13 @@ trigger2 = HihatOpen-909
 trigger3 = HihatClosed-909
 trigger4 = Clap
 
+to do:
+trigger5 = Tom low
+trigger6 = Tom mid
+trigger7 = Tom high
+trigger8 = rim 
+
+
 */
 
 
