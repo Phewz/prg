@@ -41,24 +41,7 @@ body {
 }
 
 #trigger1{
-	vertical-align: top;
-	height: 4em;
-	width: 5em;
-	background-color: #ffffcc;
-	border-radius: 0.2em;
-	margin-top: 4.6%;
 	margin-left: 8.5%;
-	margin-bottom: 0.8%;
-	-webkit-box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	-moz-box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	display: inline-block;
-}
-
-#trigger1:active{
-	-webkit-box-shadow: -0.07em 0.07em 0.18em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	-moz-box-shadow: -0.07em 0.07em 0.18em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	box-shadow: -0.07em 0.07em 0.18em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
 }
 
 .triggers{
@@ -70,16 +53,16 @@ body {
 	margin-top: 4.6%;
 	margin-left: 0.8%;
 	margin-bottom: 0.8%;
-	-webkit-box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	-moz-box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	-webkit-box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	-moz-box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	display: inline-block;
 }
 
 .triggers:active{
-	-webkit-box-shadow: -0.07em 0.07em 0.18em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	-moz-box-shadow: -0.07em 0.07em 0.18em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
-	box-shadow: -0.07em 0.07em 0.18em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #ffffe5;
+	-webkit-box-shadow: -0.1em 0.1em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.1em 0.1em 0.2em #fffffc, inset 0.5em -0.5em 2em #fffffc, inset -0.1em 0.1em 2.5em #909090;
+	-moz-box-shadow: -0.1em 0.1em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.1em 0.1em 0.2em #fffffc, inset 0.5em -0.5em 2em #fffffc, inset -0.1em 0.1em 2.5em #909090;
+	box-shadow: -0.1em 0.1em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.1em 0.1em 0.2em #fffffc, inset 0.5em -0.5em 2em #fffffc, inset -0.1em 0.1em 2.5em #909090;
 }
 
 /*triggerpad Buchstaben @W*/
