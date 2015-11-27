@@ -25,6 +25,9 @@ trigger8 = rim
 Panning und Effekte wurden schon getestet aber sind im SSD crash verloren gegangen. Folgt Anfang kommender Woche (KW 49)
 Der Code wird wie in 909key_new.js schon angefangen auch noch verkürzt und optimiert
 
+Grafische Vorgabe: https://github.com/Phewz/prg/blob/master/images/GUI-Skizze.png
+wird in css + js umgesetzt. Fader = CSS, animation und funktionen in JS
+
 */
 
 
