@@ -21,6 +21,9 @@ trigger6 = Tom mid
 trigger7 = Tom high
 trigger8 = rim 
 
+- Effekte, Panning und erstes Sequencing (Abspielen der Noten nach vorgegebenem Tempo) folgen die Tage. 
+Panning und Effekte wurden schon getestet aber sind im SSD crash verloren gegangen. Folgt Anfang kommender Woche (KW 49)
+Der Code wird wie in 909key_new.js schon angefangen auch noch verkürzt und optimiert
 
 */
 
