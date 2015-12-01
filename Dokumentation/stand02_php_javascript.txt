@@ -1,0 +1,10 @@
+Bisher waren die Änderungen um Code verankert. 
+Da der erste Stand eine Aufgabe in Emil war dachten wir, dass Stand 02-x auch per Emil angefordert werden.
+Ab sofort werden wir mit dem Dokumentations-Ordner arbeiten.
+
+30./31.11: "Großes" Treffen an zwei Tagen. JS Struktur erstellt. Erste Erfolge mit JS und HTML5 Integration.
+19.11: Ladeanimation, Einbau folgt, noch verbuggt.
+21.11: Treffen mit Besprechung, Sequencer genau durch gesprochen und Skizze als "sequencer-function.jpg" ins Repo gepushed. wird ab sofort geauer dokumentiert. Weitere Erfolge mit JS, Töne lassen sich gut abspielen und Sequencer kann endlich angegangen werden.
+22.11: To Do Next: Tastenanschlag triggert CSS, Volume Fader für einzelne Kanäle, Panning für einzelne Kanäle, FX (Klangmodulation) Test.
+24.11: 909keys Javascript gekürzt und aufgeräumt, wird noch erweitert.
+
