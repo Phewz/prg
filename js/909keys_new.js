@@ -37,7 +37,6 @@ function onClick(e){
   playSound.start(0);
 }
 
-}());
 
 // oben angegebene funktion mit unten stehenden variablen/daten ausführen.. sample, source, trigger-div, key - to do: weiterführen
 
