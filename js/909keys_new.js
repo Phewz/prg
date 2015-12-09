@@ -29,6 +29,8 @@ function onKeyDown(e){
   }
 }
 
+}());
+
 // to do: play sound onClick/touch DONE!!!
 function onClick(e){
   var playSound = context.createBufferSource();
