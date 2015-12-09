@@ -1,4 +1,4 @@
-// 909keys gekürzt, ggf noch verbuggt, keine duplikate mehr. wird morgen weiter geführt
+// 909keys gekürzt, ggf noch verbuggt, keine duplikate mehr. irgendwo ist noch ein bug, die sounds werden nicht abgespielt - von der logik her müsste es aber passen?
 
 function playSound(sample, source, trigger, key){
 
