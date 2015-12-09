@@ -1,10 +1,9 @@
 *{
-	/*prevent user to select elements*/
 	-webkit-appearance: none;
 	-webkit-user-select: none; /* Chrome/Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none;
-	/*border: 1px dashed blue; /* zur Orientierung*/
+	/*prevent user to select elements*/
 }
 
 html{
@@ -31,54 +30,59 @@ body {
 	width: 85em;
 	margin: auto;
 	margin-top: 5%;
-
-
 }
 
 #devicecontent{
 	overflow: auto;
-	margin-top: 0; /*Positionierung des contents auf der Silbernen Platte*/
+	margin-top: 0; /*Positionierung des contents auf der  Metallplatte*/
+}
+
+
+/*SELECTORS-PLATZHALTER*/
+#selector1{
+	margin-left: 7.3em;
+}
+.selectors{
+	height: 2em;
+	width: 5em;
+	background-color: #ddd;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
 }
 
 /*TRIGGERPADS*/
 #trigger1{
-	margin-left: 8.5%;
+	margin-left: 7.3em;
 }
-
 .triggers{
 	vertical-align: top;
 	height: 4em;
 	width: 5em;
 	background-color: #ffffcc;
 	border-radius: 0.2em;
-	margin-top: 4.6%;
 	margin-left: 0.8%;
 	margin-bottom: 0.8%;
-	-webkit-box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
-	-moz-box-shadow: -0.18em 0.18em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	-webkit-box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	-moz-box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	display: inline-block;
 }
-
 .triggers:active{
 	-webkit-box-shadow: -0.1em 0.1em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.1em 0.1em 0.2em #fffffc, inset 0.5em -0.5em 2em #fffffc, inset -0.1em 0.1em 2.5em #909090;
 	-moz-box-shadow: -0.1em 0.1em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.1em 0.1em 0.2em #fffffc, inset 0.5em -0.5em 2em #fffffc, inset -0.1em 0.1em 2.5em #909090;
 	box-shadow: -0.1em 0.1em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.1em 0.1em 0.2em #fffffc, inset 0.5em -0.5em 2em #fffffc, inset -0.1em 0.1em 2.5em #909090;
 }
-
-/*triggerpad Buchstaben @W*/
+/*triggerpad Beschriftung @W*/
 p{
 	margin:auto;
 	text-align: center;
 	font-size: 150%;
 }
 
-
 /*VOLUMEFADER*/
 #slide1{
 	margin-left: 9.5em;
 }
-
 .slides{
 	vertical-align: top;
 	height: 9em;
@@ -90,7 +94,6 @@ p{
 	margin-bottom: 1em;
 	display: inline-block;
 }
-
 .faders{
 	height: 2.5em;
 	width: 1.4em;
@@ -100,4 +103,57 @@ p{
 	margin-left: -0.5em;
 	margin-bottom: 1em;
 	display: inline-block;
+}
+
+/*PANORAMAKNOBS*/
+#pan1{
+	margin-left: 8.6em;
+}
+.pans{
+	height: 2.2em;
+	width: 2.2em;
+	background-color: #000;
+	border-radius: 50%;
+	margin-top: 1em;
+	margin-left: 3.48em;
+	display: inline-block;
+}
+.panFont{
+	margin-top: 0.5em;
+	text-align: center;
+	font-size: 80%;
+	color: white;
+}
+
+/*GLOBALSETTINGS-PLATZHALTER*/
+#globalsect{
+	height: 10em;
+	width: 70em;
+	border: 0.1em solid black;
+	margin-top: 1.5em;
+	margin-left: 7.5em;
+	margin-bottom: 0.5em;
+}
+
+/*SEQUENZERBUTTONS*/
+#hit1{
+	margin-left: 7.1em;
+}
+.seqButtons{
+	vertical-align: top;
+	height: 10em;
+	width: 4em;
+	background-color: #fff;
+	border-radius: 0.1em;
+	margin-left: 0.2em;
+	margin-bottom: 1em;
+	-webkit-box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	-moz-box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	display: inline-block;
+}
+.seqButtons:active{ /*Merkt sich den Click noch nicht (JS?)*/
+	-webkit-box-shadow: -0.0em 0.0em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	-moz-box-shadow: -0.0em 0.0em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
+	box-shadow: -0.0em 0.0em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 }
