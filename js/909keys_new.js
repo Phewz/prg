@@ -39,11 +39,79 @@ function onClick(e){
 
 }());
 
-// oben angegebene funktion mit unten stehenden variablen/daten ausführen.. to do: weiterführen
+// oben angegebene funktion mit unten stehenden variablen/daten ausführen.. sample, source, trigger-div, key - to do: weiterführen
 
+// Kick
+(function(){
+
+    playSound("kick", "sounds/909/Kick-909.wav", "trigger1", "88");
+}
+
+// HihatOpen-909
+(function(){
+
+    playSound("openHH", "sounds/909/Hihat-909-Open.wav", "trigger2", "89");
+}
+
+// closed HiHat
 (function(){
 
     playSound("closedHH", "sounds/909/Hihat-909-Closed.wav", "trigger3", "85");
 }
+
+// Clap
+(function(){
+
+    playSound("clap", "sounds/909/Clap-909.wav", "trigger4", "68");
+}
+
+// Snare
+(function(){
+
+    playSound("snare", "sounds/909/Snare-909.wav", "trigger5", "81");
+}
+
+// LowTom
+(function(){
+
+    playSound("tomLow", "sounds/909/Tom-909-Low.wav", "trigger6", "87");
+}
+
+// MidTom
+(function(){
+
+    playSound("tomMid", "sounds/909/Tom-909-Mid.wav", "trigger7", "69");
+}
+
+// HiTom
+(function(){
+
+    playSound("tomHi", "sounds/909/Tom-909-Hi.wav", "trigger8", "82");
+}
+
+// Shaker
+(function(){
+
+    playSound("shaker", "sounds/909/Shaker-909.wav", "trigger9", "84");
+}
+
+// Ride
+(function(){
+
+    playSound("ride", "sounds/909/Ride-909.wav", "trigger10", "71");
+}
+
+// Snare
+(function(){
+
+    playSound("snare", "sounds/909/Snare-909.wav", "trigger11", "72");
+}
+
+// Wood
+(function(){
+
+    playSound("wood", "sounds/909/Wood-909.wav", "trigger12", "83");
+}
+
 
 }());
