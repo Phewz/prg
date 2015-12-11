@@ -1,5 +1,13 @@
 // 909keys gekürzt, ggf noch verbuggt, keine duplikate mehr. irgendwo ist noch ein bug, die sounds werden nicht abgespielt - von der logik her müsste es aber passen?
 
+/*
+* === Feedback Alpers, Dez 11 ===
+* 
+* Machen Sie es sich doch einfach: Nutzen Sie den <audio>-Container von HTML 5. (Einbettung in <figure>-Container nicht vergessen.)
+*
+* === Feedback Alpers, Ende ===
+*/
+
 function playSound(sample, source, trigger, key){
 
 var context = new AudioContext();

@@ -8,3 +8,9 @@ Ab sofort werden wir mit dem Dokumentations-Ordner arbeiten.
 22.11: To Do Next: Tastenanschlag triggert CSS, Volume Fader für einzelne Kanäle, Panning für einzelne Kanäle, FX (Klangmodulation) Test.
 24.11: 909keys Javascript gekürzt und aufgeräumt, wird noch erweitert.
 
+=== Feedback Alpers, Dez 11 ===
+
+Bin ein wenig irritiert, weil diese Aufstellung identisch mit der für den HTML-Teil zu sein scheint;
+in Ihrer Dokumentation sollte deutlich werden, was sich am PHP- bzw. JS-Teil geändert hat und warum.
+
+=== Feedback Alpers, Ende ===

@@ -48,3 +48,11 @@
      
   e) WAV-Export:
   Das angefertigte Pattern wird im Loop aufgenommen, als WAV exportiert und zum Download angeboten.
+
+=== Feedback Alpers, Dez 11 ===
+
+Sehr gute Beschreibung des Projekts. Ausführlich und dennoch knapp formuliert.
+
+Insbesondere ist gut, dass hier erkennbar ist, welche Funktionalität für welches Element realisiert werden soll.
+
+=== Feedback Alpers, Ende ===

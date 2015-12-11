@@ -15,6 +15,18 @@ Pizza bestelle ich :>
 HTML IDs wie besprochen
 
  */
+ 
+/*
+* === Feedback Alpers, Dez 11 ===
+*
+* Dann mal guten Appetit. ;)
+* 
+* Aber Scherz beiseite: Genau solche Systemausfälle sind der Grund, aus dem Sie Änderungen
+* so oft wie möglich pushen sollten. (Wenn Sie dabei noch keine lauffähige Version entwickelt haben,
+* dann erstellen Sie eben einen Fork, genau dafür gibt es diese Dinger nämlich.)
+*
+* === Feedback Alpers, Ende ===
+*/
 
  (function(){
 	 

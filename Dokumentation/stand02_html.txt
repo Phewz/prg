@@ -2,8 +2,23 @@ Bisher waren die Änderungen um Code verankert.
 Da der erste Stand eine Aufgabe in Emil war dachten wir, dass Stand 02-x auch per Emil angefordert werden.
 Ab sofort werden wir mit dem Dokumentations-Ordner arbeiten.
 
+=== Feedback Alpers, Dez 11 ===
+
+Solche Missverständnisse sind ein Teil der Schwierigkeiten bei der Projektarbeit, aber auch generell bei
+Teamarbeiten, die für einen externen "Kunden" erfolgen. Von daher: Alles o.k.
+
+=== Feedback Alpers, Ende ===
+
 30./31.11: "Großes" Treffen an zwei Tagen. HTML Struktur erstellt. Erste Erfolge mit JS und HTML5 Integration.
 19.11: Ladeanimation, Einbau folgt, noch verbuggt.
 21.11: Treffen mit Besprechung, Sequencer genau durch gesprochen und Skizze als "sequencer-function.jpg" ins Repo gepushed. wird ab sofort geauer dokumentiert. Erstellung von Triggerpads und weitere Erfolge mit JS/Html interaktion. Vorlage "sequenzer-funtion.jpg" wird nach und nach mittels html & css nachgebaut.
 22.11: To Do Next: Erstellung von Volume Fadern und Panning Reglern für einzelne Kanäle.
 26.11: Aufräumen und Optimierung des bestehenden Codes.
+
+=== Feedback Alpers, Dez 11 ===
+
+Gute Aufstellung.
+
+Einziges mögliches(!) Manko: Wenn einzelne Entscheidungen revidiert wurden, sollte es hier aufgeführt werden.
+
+=== Feedback Alpers, Ende ===

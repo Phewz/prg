@@ -41,3 +41,11 @@ Nutzer mithilfe folgender Parameter klanglich beeinflussen:
 	d) Hi- und Low-Cut Filter - Regler 
 	e) Reverb und Delay - Regler
  
+=== Feedback Alpers, Dez 11 ===
+
+Sehr gute Beschreibung des Projekts. Ausführlich und dennoch knapp formuliert.
+
+Einziges Manko (da in der Datei für die Dokumentation des HTML-Teils gespeichert): Hier wird nicht klar zwischen
+dem Modell (HTML-Teil) und dem Controller (PHP/JS) differenziert.
+
+=== Feedback Alpers, Ende ===
