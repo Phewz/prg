@@ -11,17 +11,23 @@
 
   <body ontouchstart="">
     <!-- JS-To-Do: ladeanimation integrieren, aktueller stand siehe loader.js -->
-    <div id = "devicebody">
-      <div id = "devicecontent">
 
+    <figure id = "devicebody">
+      <div id = "devicecontent">
         <!--SelectorSection-->
-        <div>
-          <div id = "selector1" class = "selectors"></div>
+        <div id = "SelectorSection">
+          <div id = "dropDown1" class = "dropDowns">
+            <select class = "dDs"> <!--Position eines offenen DDMenüs lässt sich so leider nicht kontrollieren. Arbeite an einer Lösung (Stichwort <ul><li> usw.)-->
+                 <option value = "1">Kick1</option>
+                 <option value = "2">Kick2</option>
+                 <option value = "3">Kick3</option>
+            </select>
+          </div>
         </div>
 
         <!-- TriggerPadSection -->
-        <div>
-          <div id = "trigger1" class = "triggers"><p>X</p></div>
+        <div id= "TriggerPadSection">
+          <div id = "trigger1" class = "triggers"><p>X</p></div> <!--zum Thema Wiederholungen: ngRepeat zusammen anschauen-->
           <div id = "trigger2" class = "triggers"><p>Y</p></div>
           <div id = "trigger3" class = "triggers"><p>U</p></div>
           <div id = "trigger4" class = "triggers"><p>D</p></div>
@@ -36,7 +42,7 @@
         </div>
 
         <!-- FaderSection-->
-        <div>
+        <div id = "FaderSection">
           <div id = "slide1" class = "slides">
             <div id = "fader1" class = "faders"></div>
           </div>
@@ -76,7 +82,7 @@
         </div>
 
         <!--PanningSection-->
-        <div>
+        <div id = "PanningSection">
           <div id = "pan1" class = "pans"><p class = "panFont" >Pan</p></div>
           <div id = "pan2" class = "pans"><p class = "panFont" >Pan</p></div>
           <div id = "pan3" class = "pans"><p class = "panFont" >Pan</p></div>
@@ -92,32 +98,30 @@
         </div>
 
         <!--GlobalSection-->
-        <div>
           <div id = "globalsect"></div>
-        </div>
 
         <!--SequenzerSection -->
-        <div>
-          <div id = "hit1" class = "seqButtons"><p>1</p></div>
-          <div id = "hit2" class = "seqButtons"><p>2</p></div>
-          <div id = "hit3" class = "seqButtons"><p>3</p></div>
-          <div id = "hit4" class = "seqButtons"><p>4</p></div>
-          <div id = "hit5" class = "seqButtons"><p>5</p></div>
-          <div id = "hit6" class = "seqButtons"><p>6</p></div>
-          <div id = "hit7" class = "seqButtons"><p>7</p></div>
-          <div id = "hit8" class = "seqButtons"><p>8</p></div>
-          <div id = "hit9" class = "seqButtons"><p>9</p></div>
-          <div id = "hit10" class = "seqButtons"><p>10</p></div>
-          <div id = "hit11" class = "seqButtons"><p>11</p></div>
-          <div id = "hit12" class = "seqButtons"><p>12</p></div>
-          <div id = "hit13" class = "seqButtons"><p>13</p></div>
-          <div id = "hit14" class = "seqButtons"><p>14</p></div>
-          <div id = "hit15" class = "seqButtons"><p>15</p></div>
-          <div id = "hit16" class = "seqButtons"><p>16</p></div>
+        <div id ="SequenzerSection">
+          <button id = "step1" class = "seqButtons"><p>1</p></button>
+          <button id = "step2" class = "seqButtons"><p>2</p></button>
+          <button id = "step3" class = "seqButtons"><p>3</p></button>
+          <button id = "step4" class = "seqButtons"><p>4</p></button>
+          <button id = "step5" class = "seqButtons"><p>5</p></button>
+          <button id = "step6" class = "seqButtons"><p>6</p></button>
+          <button id = "step7" class = "seqButtons"><p>7</p></button>
+          <button id = "step8" class = "seqButtons"><p>8</p></button>
+          <button id = "step9" class = "seqButtons"><p>9</p></button>
+          <button id = "step10" class = "seqButtons"><p>10</p></button>
+          <button id = "step11" class = "seqButtons"><p>11</p></button>
+          <button id = "step12" class = "seqButtons"><p>12</p></button>
+          <button id = "step13" class = "seqButtons"><p>13</p></button>
+          <button id = "step14" class = "seqButtons"><p>14</p></button>
+          <button id = "step15" class = "seqButtons"><p>15</p></button>
+          <button id = "step16" class = "seqButtons"><p>16</p></button>
         </div>
 
       </div>
-    </div>
+    </figure>
   <!-- drumkey test js import, am Ende des body Tags aufgrund von DOM -->
   <script src="js/909keys.js" type="text/javascript" language="javascript"></script>
   </body>

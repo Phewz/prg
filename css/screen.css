@@ -26,10 +26,10 @@ body {
 	background-image: url("../images/Gui-Skizze02.png");
 	background-size: 85em;
 	background-repeat: no-repeat;
-	height: 49.1em;
+	height: 50em;
 	width: 85em;
 	margin: auto;
-	margin-top: 5%;
+	margin-top: 5em;
 }
 
 #devicecontent{
@@ -39,15 +39,20 @@ body {
 
 
 /*SELECTORS-PLATZHALTER*/
-#selector1{
+#dropDown1{
 	margin-left: 7.3em;
 }
-.selectors{
+/*spezielle Horizontale Positionierung des ersten Elementes*/
+.dropDowns{
 	height: 2em;
 	width: 5em;
 	background-color: #ddd;
 	margin-top: 1.5em;
 	margin-bottom: 0.5em;
+}
+
+option{
+	margin-left: 1em;
 }
 
 /*TRIGGERPADS*/
@@ -136,17 +141,19 @@ p{
 }
 
 /*SEQUENZERBUTTONS*/
-#hit1{
-	margin-left: 7.1em;
+#step1{
+	margin-left: 11em;
 }
 .seqButtons{
 	vertical-align: top;
-	height: 10em;
-	width: 4em;
+	height: 15em;
+	width: 5.8em;
 	background-color: #fff;
 	border-radius: 0.1em;
 	margin-left: 0.2em;
 	margin-bottom: 1em;
+	outline: none;
+	border: 0;
 	-webkit-box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	-moz-box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
