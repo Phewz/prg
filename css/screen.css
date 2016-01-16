@@ -44,11 +44,13 @@ body {
 }
 /*spezielle Horizontale Positionierung des ersten Elementes*/
 .dropDowns{
+	display: inline-block;
 	height: 2em;
 	width: 5em;
 	background-color: #ddd;
 	margin-top: 1.5em;
 	margin-bottom: 0.5em;
+	margin-left: 0.68em;
 }
 
 option{
