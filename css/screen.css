@@ -159,3 +159,13 @@ p{
 	-moz-box-shadow: -0.0em 0.0em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	box-shadow: -0.0em 0.0em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 }
+
+
+/*About Verlinkung*/
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: rgba(255,255,255,0.8);
+}

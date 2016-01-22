@@ -1,0 +1,47 @@
+body {
+  background: url("../images/background3.jpg");
+  background-size: auto;
+	background-repeat: no-repeat;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+header {
+	text-align: center;
+	font-size: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30%;
+  height: 80%;
+}
+
+h1, h2, h3 {
+	color: #000000;
+}
+
+h1 {
+	margin-bottom: 25px;
+	font-size: 280%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 180%;
+}
+
+h3 {
+	font-size: 110%;
+  text-decoration: underline;
+}
+
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: rgba(255,255,255,0.8);
+}
