@@ -63,16 +63,18 @@ option{
 }
 .triggers{
 	vertical-align: top;
-	height: 4em;
-	width: 5em;
+	height: 6em;
+	width: 5.88%;
 	background-color: #ffffcc;
 	border-radius: 0.2em;
 	margin-left: 0.81%;
 	margin-bottom: 0.8%;
+	outline: none;
+	border: 0;
+	display: inline-block;
 	-webkit-box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	-moz-box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
-	display: inline-block;
 }
 .triggers:active{
 	-webkit-box-shadow: -0.1em 0.1em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.1em 0.1em 0.2em #fffffc, inset 0.5em -0.5em 2em #fffffc, inset -0.1em 0.1em 2.5em #909090;
@@ -88,11 +90,11 @@ p{
 
 /*VOLUMEFADER*/
 
-#faderKick{
-	margin-left: 10.45%;
+#faderSection{
+	margin-left: 5.9%;
 }
 
-input[type=range][orient=vertical]{
+#faderSection input[type=range][orient=vertical]{
     writing-mode: bt-lr; /* IE */
     -webkit-appearance: slider-vertical; /* WebKit */
 		vertical-align: top;
@@ -100,29 +102,27 @@ input[type=range][orient=vertical]{
     height: 15em;
     padding: 0 5px;
 		margin-top: 1.5%;
-		margin-left: 4.68%;
+		margin-left: 4.97%;
 		display: inline-block;
 }
 
 /*PANORAMAKNOBS*/
-#panKick{
-	margin-left: 8.6em;
+#panningSection{
+	margin-left: 6.3%;
 }
-.pans{
-	height: 2.2em;
-	width: 2.2em;
-	background-color: #000;
-	border-radius: 50%;
-	margin-top: 1%;
-	margin-left: 4.1%;
-	display: inline-block;
+
+#panningSection input[type=range][orient=horizontal]{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-horizontal; /* WebKit */
+		vertical-align: top;
+    width: 3%;
+    height: 1%;
+    padding: 0px;
+		margin-top: 1%;
+		margin-left: 4%;
+		display: inline-block;
 }
-.panFont{
-	margin-top: 20%;
-	text-align: center;
-	font-size: 80%;
-	color: white;
-}
+
 
 /*GLOBALSETTINGS-PLATZHALTER*/
 #globalsect{
@@ -148,10 +148,11 @@ input[type=range][orient=vertical]{
 	margin-bottom: 0.2%;
 	outline: none;
 	border: 0;
+	display: inline-block;
 	-webkit-box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	-moz-box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
-	display: inline-block;
+
 }
 .seqButtons:active{ /*Merkt sich den Click noch nicht (JS?)*/
 	-webkit-box-shadow: -0.0em 0.0em 0.2em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;

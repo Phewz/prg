@@ -117,76 +117,75 @@ da jeder "Kanal" individuell arbeitet.-->
 
         <!-- TriggerPadSection -->
         <div id= "TriggerPadSection">
-          <div id = "triggerKick" class = "triggers"><p>X</p></div> <!--zum Thema Wiederholungen: ngRepeat zusammen anschauen-->
-          <div id = "triggerSnare" class = "triggers"><p>Y</p></div>
-          <div id = "triggerClaps" class = "triggers"><p>U</p></div>
-          <div id = "triggerHihatClosed" class = "triggers"><p>D</p></div>
-          <div id = "triggerHihatOpen" class = "triggers"></div>
-          <div id = "triggerTom1" class = "triggers"></div>
-          <div id = "triggerTom2" class = "triggers"></div>
-          <div id = "triggerTom3" class = "triggers"></div>
-          <div id = "triggerCrash" class = "triggers"></div>
-          <div id = "triggerRide" class = "triggers"></div>
-          <div id = "triggerWoods" class = "triggers"></div>
-          <div id = "triggerFX" class = "triggers"></div>
+          <button id = "triggerKick" class = "triggers"><p>X</p></button> <!--zum Thema Wiederholungen: ngRepeat zusammen anschauen-->
+          <button id = "triggerSnare" class = "triggers"><p>Y</p></button>
+          <button id = "triggerClaps" class = "triggers"><p>U</p></button>
+          <button id = "triggerHihatClosed" class = "triggers"><p>D</p></button>
+          <button id = "triggerHihatOpen" class = "triggers"></button>
+          <button id = "triggerTom1" class = "triggers"></button>
+          <button id = "triggerTom2" class = "triggers"></button>
+          <button id = "triggerTom3" class = "triggers"></button>
+          <button id = "triggerCrash" class = "triggers"></button>
+          <button id = "triggerRide" class = "triggers"></button>
+          <button id = "triggerWoods" class = "triggers"></button>
+          <button id = "triggerFX" class = "triggers"></button>
         </div>
 
         <!-- FaderSection-->
-        <div id = "FaderSection">
-
+        <div id = "faderSection">
           <input id=faderKick type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume1 for=faderKick ></output>
-
           <input id=faderSnare type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume2 for=faderSnare ></output>
-
           <input id=faderClaps type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume3 for=faderClaps ></output>
-
           <input id=faderHihatClosed type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume4 for=faderHihatClosed ></output>
-
           <input id=faderHihatOpen type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume5 for=faderHihatOpen ></output>
-
           <input id=faderTom1 type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume6 for=faderTom1 ></output>
-
           <input id=faderTom2 type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume7 for=faderTom2 ></output>
-
           <input id=faderTom3 type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume8 for=faderTom3 ></output>
-
           <input id=faderCrash type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume9 for=faderCrash ></output>
-
           <input id=faderRide type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume2 for=faderRide ></output>
-
           <input id=faderWoods type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume2 for=faderWoods ></output>
-
           <input id=faderFX type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume2 for=faderFX ></output>
-
         </div>
 
-
         <!--PanningSection-->
-        <div id = "PanningSection">
-          <div id = "panKick" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panSnare" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panClaps" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panHihatClosed" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panHihatOpen" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panTom1" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panTom2" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panTom3" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panCrash" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panRide" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panWoods" class = "pans"><p class = "panFont" >Pan</p></div>
-          <div id = "panFX" class = "pans"><p class = "panFont" >Pan</p></div>
+
+        <div id = "panningSection">
+          <input id=panKick type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume1 for=panKick ></output>
+          <input id=panSnare type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume2 for=panSnare ></output>
+          <input id=panClaps type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume3 for=panClaps ></output>
+          <input id=panHihatClosed type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume4 for=panHihatClosed ></output>
+          <input id=panHihatOpen type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume5 for=panHihatOpen ></output>
+          <input id=panTom1 type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume6 for=panTom1 ></output>
+          <input id=panTom2 type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume7 for=panTom2 ></output>
+          <input id=panTom3 type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume8 for=panTom3 ></output>
+          <input id=panCrash type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume9 for=panCrash ></output>
+          <input id=panRide type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume2 for=panRide ></output>
+          <input id=panWoods type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume2 for=panWoods ></output>
+          <input id=panFX type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
+          <output id=volume2 for=panFX ></output>
         </div>
 
         <!--GlobalSection-->
@@ -211,7 +210,6 @@ da jeder "Kanal" individuell arbeitet.-->
           <button id = "step15" class = "seqButtons"><p>15</p></button>
           <button id = "step16" class = "seqButtons"><p>16</p></button>
         </div>
-
       </div>
     </figure>
   <!-- drumkey test js import, am Ende des body Tags aufgrund von DOM -->
@@ -249,7 +247,7 @@ entfernen können.
 <!--
 === Antwort auf Feedback Alexander L., Jan 22 ===
 
-Ich habe nun weitgehend <div>-Container durch diverse HTML 5 Alternativen ersetzt.
+Ich habe nun die <div>-Container durch diverse HTML 5 Alternativen ersetzt.
 Das Verhindern der kopierten HTML-Blöcke ist nur mit HTML und CSS leider nicht möglich,
 da jedes einzelne Element individuell von JS angesprochen werden muss.
 Uns ist unklar, weshalb sie im HTML Feedback auf eine Integration von PHP eingehen,
