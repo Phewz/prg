@@ -40,7 +40,7 @@ body {
 
 /*SELECTORS-PLATZHALTER*/
 #dropDown1{
-	margin-left: 7.3em;
+	margin-left: 8.6%;
 }
 /*spezielle Horizontale Positionierung des ersten Elementes*/
 .dropDowns{
@@ -48,18 +48,18 @@ body {
 	height: 2em;
 	width: 5em;
 	background-color: #ddd;
-	margin-top: 1.5em;
-	margin-bottom: 0.5em;
-	margin-left: 0.68em;
+	margin-top: 1.8%;
+	margin-bottom: 0.5%;
+	margin-left: 0.81%;
 }
 
 option{
-	margin-left: 1em;
+	margin-left: 2%;
 }
 
 /*TRIGGERPADS*/
 #triggerKick{
-	margin-left: 7.3em;
+	margin-left: 8.6%;
 }
 .triggers{
 	vertical-align: top;
@@ -67,7 +67,7 @@ option{
 	width: 5em;
 	background-color: #ffffcc;
 	border-radius: 0.2em;
-	margin-left: 0.8%;
+	margin-left: 0.81%;
 	margin-bottom: 0.8%;
 	-webkit-box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
 	-moz-box-shadow: -0.14em 0.14em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
@@ -89,7 +89,7 @@ p{
 /*VOLUMEFADER*/
 
 #faderKick{
-	margin-left: 12.85em;
+	margin-left: 10.45%;
 }
 
 input[type=range][orient=vertical]{
@@ -99,9 +99,8 @@ input[type=range][orient=vertical]{
     width: 1.4em;
     height: 15em;
     padding: 0 5px;
-		margin-top: 1.5em;
-		margin-left: 5.78em;
-		margin-bottom: 0.5em;
+		margin-top: 1.5%;
+		margin-left: 4.67%;
 		display: inline-block;
 }
 
@@ -114,12 +113,12 @@ input[type=range][orient=vertical]{
 	width: 2.2em;
 	background-color: #000;
 	border-radius: 50%;
-	margin-top: 1em;
-	margin-left: 3.48em;
+	margin-top: 1%;
+	margin-left: 4.1%;
 	display: inline-block;
 }
 .panFont{
-	margin-top: 0.5em;
+	margin-top: 20%;
 	text-align: center;
 	font-size: 80%;
 	color: white;
@@ -130,14 +129,13 @@ input[type=range][orient=vertical]{
 	height: 10em;
 	width: 70em;
 	border: 0.1em solid black;
-	margin-top: 1.5em;
-	margin-left: 7.5em;
-	margin-bottom: 0.5em;
+	margin-top: 1.9%;
+	margin-left: 8.8%;
 }
 
 /*SEQUENZERBUTTONS*/
 #step1{
-	margin-left: 11em;
+	margin-left: 9%;
 }
 .seqButtons{
 	vertical-align: top;
@@ -145,8 +143,8 @@ input[type=range][orient=vertical]{
 	width: 5.8em;
 	background-color: #fff;
 	border-radius: 0.1em;
-	margin-left: 0.2em;
-	margin-bottom: 1em;
+	margin-top: 0.8%;
+	margin-left: 0.2%;
 	outline: none;
 	border: 0;
 	-webkit-box-shadow: -0.2em 0.2em 0.3em #000000, inset 0.1em -0.1em 0.3em #000000, inset -0.2em 0.2em 0.3em #fffffc;
