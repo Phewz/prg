@@ -19,9 +19,9 @@ to do:
 trigger5 = Tom low
 trigger6 = Tom mid
 trigger7 = Tom high
-trigger8 = rim 
+trigger8 = rim
 
-- Effekte, Panning und erstes Sequencing (Abspielen der Noten nach vorgegebenem Tempo) folgen die Tage. 
+- Effekte, Panning und erstes Sequencing (Abspielen der Noten nach vorgegebenem Tempo) folgen die Tage.
 Panning und Effekte wurden schon getestet aber sind im SSD crash verloren gegangen. Folgt Anfang kommender Woche (KW 49)
 Der Code wird wie in 909key_new.js schon angefangen auch noch verkürzt und optimiert
 
@@ -47,7 +47,7 @@ getSound.onload = function() {
 getSound.send(); // Anfrage + Sample laden
 
 window.addEventListener("keydown",onKeyDown); // Event Listener für Tastendruck
-document.getElementById("trigger1").addEventListener("click",onClick); // Event Listener für Triggerpad 1
+document.getElementById("triggerKick").addEventListener("click",onClick); // Event Listener für Triggerpad 1
 
 function onKeyDown(e){
   switch (e.keyCode) {
@@ -88,12 +88,12 @@ getSound.onload = function() {
 getSound.send();
 
 window.addEventListener("keydown",onKeyDown);
-document.getElementById("trigger2").addEventListener("click",onClick); // Event Listener für Triggerpad 2
+document.getElementById("triggerHihatOpen").addEventListener("click",onClick); // Event Listener für Triggerpad 2
 
 function onKeyDown(e){
   switch (e.keyCode) {
-    // Y
-    case 89:
+
+    case 45:
       var playSound = context.createBufferSource();
       playSound.buffer = openHH;
       playSound.connect(context.destination);
@@ -129,12 +129,12 @@ getSound.onload = function() {
 getSound.send();
 
 window.addEventListener("keydown",onKeyDown);
-document.getElementById("trigger3").addEventListener("click",onClick); // Event Listener für Triggerpad 3
+document.getElementById("triggerHihatClosed").addEventListener("click",onClick); // Event Listener für Triggerpad 3
 
 function onKeyDown(e){
   switch (e.keyCode) {
-    // U
-    case 85:
+    // D
+    case 68:
       var playSound = context.createBufferSource();
       playSound.buffer = closedHH;
       playSound.connect(context.destination);
@@ -170,12 +170,12 @@ getSound.onload = function() {
 getSound.send();
 
 window.addEventListener("keydown",onKeyDown);
-document.getElementById("trigger4").addEventListener("click",onClick); // Event Listener für Triggerpad 4
+document.getElementById("triggerClaps").addEventListener("click",onClick); // Event Listener für Triggerpad 4
 
 function onKeyDown(e){
   switch (e.keyCode) {
     // D
-    case 68:
+    case 85:
       var playSound = context.createBufferSource();
       playSound.buffer = clap;
       playSound.connect(context.destination);
@@ -187,6 +187,47 @@ function onKeyDown(e){
 function onClick(e){
   var playSound = context.createBufferSource();
   playSound.buffer = clap;
+  playSound.connect(context.destination);
+  playSound.start(0);
+}
+
+
+}());
+
+// Snare
+
+(function(){
+
+var context = new AudioContext();
+var snare;
+var getSound = new XMLHttpRequest();
+getSound.open("GET", "sounds/909/Snare-909.wav", true);
+getSound.responseType = "arraybuffer";
+getSound.onload = function() {
+  context.decodeAudioData(getSound.response, function(buffer){
+    snare = buffer;
+  });
+}
+getSound.send();
+
+window.addEventListener("keydown",onKeyDown);
+document.getElementById("triggerSnare").addEventListener("click",onClick); // Event Listener für Triggerpad snare
+
+function onKeyDown(e){
+  switch (e.keyCode) {
+    // Y
+    case 89:
+      var playSound = context.createBufferSource();
+      playSound.buffer = snare;
+      playSound.connect(context.destination);
+      playSound.start(0);
+    break;
+  }
+}
+
+function onClick(e){
+  var playSound = context.createBufferSource();
+  playSound.buffer = snare;
   playSound.connect(context.destination);
   playSound.start(0);
 }
