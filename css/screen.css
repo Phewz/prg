@@ -100,7 +100,7 @@ input[type=range][orient=vertical]{
     height: 15em;
     padding: 0 5px;
 		margin-top: 1.5%;
-		margin-left: 4.67%;
+		margin-left: 4.68%;
 		display: inline-block;
 }
 
@@ -135,7 +135,7 @@ input[type=range][orient=vertical]{
 
 /*SEQUENZERBUTTONS*/
 #step1{
-	margin-left: 9%;
+	margin-left: 8.8%;
 }
 .seqButtons{
 	vertical-align: top;
@@ -143,7 +143,7 @@ input[type=range][orient=vertical]{
 	width: 5.8em;
 	background-color: #fff;
 	border-radius: 0.1em;
-	margin-top: 0.8%;
+	margin-top: 0.6%;
 	margin-left: 0.2%;
 	margin-bottom: 0.2%;
 	outline: none;
