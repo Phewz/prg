@@ -20,17 +20,17 @@
         <div id = "SelectorSection">
 
           <div id = "dropDown1" class = "dropDowns">
-            <select class = "dDs"> 
+            <select class = "dDs">
 			<!--Position eines offenen DDMenüs lässt sich so leider nicht kontrollieren. Arbeite an einer Lösung (Stichwort <ul><li> usw.)-->
-			
+
 			<!--
 			=== Feedback Alpers, Feb 12 ===
-			
+
 			Das ist für Ihren Aufgabenteil irrelevant, da es eine Design-Entscheidung ist.
-			
+
 			=== Feedback Alpers, Ende ===
 			-->
-			
+
                  <option value = "1">Kick A</option>
                  <option value = "2">Kick B</option>
                  <option value = "3">Kick C</option>
@@ -141,28 +141,28 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 
         <!-- TriggerPadSection -->
         <div id= "TriggerPadSection">
-          <button id = "triggerKick" class = "triggers"><p>X</p></button> <!--zum Thema Wiederholungen: ngRepeat zusammen anschauen-->
-          <button id = "triggerSnare" class = "triggers"><p>Y</p></button>
-          <button id = "triggerClaps" class = "triggers"><p>U</p></button>
-          <button id = "triggerHihatClosed" class = "triggers"><p>D</p></button>
-          <button id = "triggerHihatOpen" class = "triggers"></button>
-          <button id = "triggerTom1" class = "triggers"></button>
-          <button id = "triggerTom2" class = "triggers"></button>
-          <button id = "triggerTom3" class = "triggers"></button>
-          <button id = "triggerCrash" class = "triggers"></button>
-          <button id = "triggerRide" class = "triggers"></button>
-          <button id = "triggerWoods" class = "triggers"></button>
-          <button id = "triggerFX" class = "triggers"></button>
+          <input id = "triggerKick" class = "triggers" value="X" readonly>
+          <input id = "triggerSnare" class = "triggers" value="Y" readonly>
+          <input id = "triggerClaps" class = "triggers" value="U" readonly>
+          <input id = "triggerHihatClosed" class = "triggers" value="D" readonly>
+          <input id = "triggerHihatOpen" class = "triggers" value="P" readonly>
+          <input id = "triggerTom1" class = "triggers" value="A" readonly>
+          <input id = "triggerTom2" class = "triggers" value="K" readonly>
+          <input id = "triggerTom3" class = "triggers" value="M" readonly>
+          <input id = "triggerCrash" class = "triggers" value="V" readonly>
+          <input id = "triggerRide" class = "triggers" value="I" readonly>
+          <input id = "triggerWoods" class = "triggers" value="T" readonly>
+          <input id = "triggerFX" class = "triggers" value="E" readonly>
         </div>
-		
+
 		<!--
 		=== Feedback Alpers, Feb 12 ===
-		
+
 		Auch hier: Einfach eine Schleife nutzen.
-		
+
 		Aber: Auch der <button>-Container ist eher HTML4.01. Nutzen Sie bitte für alle Eingabemöglichkeiten von NutzerInnen
 		den <input>-Container.
-		
+
 		=== Feedback Alpers, Ende ===
 		-->
 
@@ -228,22 +228,22 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 
         <!--SequenzerSection -->
         <div id ="SequenzerSection">
-          <button id = "step1" class = "seqButtons"><p>1</p></button>
-          <button id = "step2" class = "seqButtons"><p>2</p></button>
-          <button id = "step3" class = "seqButtons"><p>3</p></button>
-          <button id = "step4" class = "seqButtons"><p>4</p></button>
-          <button id = "step5" class = "seqButtons"><p>5</p></button>
-          <button id = "step6" class = "seqButtons"><p>6</p></button>
-          <button id = "step7" class = "seqButtons"><p>7</p></button>
-          <button id = "step8" class = "seqButtons"><p>8</p></button>
-          <button id = "step9" class = "seqButtons"><p>9</p></button>
-          <button id = "step10" class = "seqButtons"><p>10</p></button>
-          <button id = "step11" class = "seqButtons"><p>11</p></button>
-          <button id = "step12" class = "seqButtons"><p>12</p></button>
-          <button id = "step13" class = "seqButtons"><p>13</p></button>
-          <button id = "step14" class = "seqButtons"><p>14</p></button>
-          <button id = "step15" class = "seqButtons"><p>15</p></button>
-          <button id = "step16" class = "seqButtons"><p>16</p></button>
+          <input id = "step1" class = "seqButtons" value="1" readonly>
+          <input id = "step2" class = "seqButtons" value="2" readonly>
+          <input id = "step3" class = "seqButtons" value="3" readonly>
+          <input id = "step4" class = "seqButtons" value="4" readonly>
+          <input id = "step5" class = "seqButtons" value="5" readonly>
+          <input id = "step6" class = "seqButtons" value="6" readonly>
+          <input id = "step7" class = "seqButtons" value="7" readonly>
+          <input id = "step8" class = "seqButtons" value="8" readonly>
+          <input id = "step9" class = "seqButtons" value="9" readonly>
+          <input id = "step10" class = "seqButtons" value="10" readonly>
+          <input id = "step11" class = "seqButtons" value="11" readonly>
+          <input id = "step12" class = "seqButtons" value="12" readonly>
+          <input id = "step13" class = "seqButtons" value="13" readonly>
+          <input id = "step14" class = "seqButtons" value="14" readonly>
+          <input id = "step15" class = "seqButtons" value="15" readonly>
+          <input id = "step16" class = "seqButtons" value="16" readonly>
         </div>
       </div>
     </figure>
@@ -304,7 +304,7 @@ Die Aufgabenstellung bestand nicht darin, dass Sie für die verschiedenen Teile 
 unterschiedliche Sprachen nutzen durften, sondern darin, dass jeder sich auf die eigene Aufgabe konzentrieren sollte.
 Das ist zu 99,9% gleichbedeutend mit der Programmierung in nur einer Sprache.
 
-ABER: 
+ABER:
 
 1.) Wenn Sie das selbe Codefragment an verschiedenen Stellen (ggf. in verschiedenen HTML-Dokumenten) einsetzen,
 dann ist die einzige Möglichkeit, um redundanten Code zu vermeiden die, dass Sie dieses Codefragment in
@@ -323,7 +323,7 @@ um eine echte Zusammenarbeit zu realisieren.
 
 Noch etwas bezüglich Ihrer Frage, wie Sie PHP einbinden sollen, vor dem Hintergrund, dass ich doch gefordert hätte, dass
 Sie nur eine Sprache verwenden sollen. Das ist so nicht richtig. Ich habe zwei Dinge bezüglich der Programmierung des
-Controller-Teils gesagt: 
+Controller-Teils gesagt:
 
 a) Ich hatte gesagt, dass Sie keinen fremden Code nutzen sollen und hier insbesondere angegeben, dass Sie keine Frameworks
 verwenden sollten, sondern wirklich alles selbst entwickeln sollten. In diesem Zusammenhang habe ich betont, dass das nicht
