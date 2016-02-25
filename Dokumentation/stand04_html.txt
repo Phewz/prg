@@ -1,9 +1,9 @@
-25.02.2016 ToDo - div container wenn möglich ersetzen. vgl. button -> input etc.
-                - php funktionen für sections
-                - about.html: Internationalisierung, CSS
-                - check html4 -> 5
-                - Dokumentation
+25.02.2016 ToDo - div container wenn möglich ersetzen. vgl. button -> input etc.  - CHECK
+                - php funktionen für sections                                     -
+                - about.html: Internationalisierung, CSS                          - CHECK
+                - check html4 -> 5                                                - CHECK
+                - Dokumentation                                                   - 
 
 Done            - Button Container in Input Container umgewandelt
-                -
-                -
+                - div Container in HTML5 Container umgewandelt
+                - Internationalisierung
