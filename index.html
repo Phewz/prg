@@ -15,11 +15,11 @@
     <a href="about.html" title="DrumMachine">About</a>
 
     <figure id = "devicebody">
-      <div id = "devicecontent">
+      <section id = "devicecontent">
         <!--SelectorSection-->
-        <div id = "SelectorSection">
+        <section id = "SelectorSection">
 
-          <div id = "dropDown1" class = "dropDowns">
+          <section id = "dropDown1" class = "dropDowns">
             <select class = "dDs">
 			<!--Position eines offenen DDMenüs lässt sich so leider nicht kontrollieren. Arbeite an einer Lösung (Stichwort <ul><li> usw.)-->
 
@@ -35,95 +35,95 @@
                  <option value = "2">Kick B</option>
                  <option value = "3">Kick C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Snare A</option>
                  <option value = "2">Snare B</option>
                  <option value = "3">Snare C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Claps A</option>
                  <option value = "2">Claps B</option>
                  <option value = "3">Claps C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Hihat Closed A</option>
                  <option value = "2">Hihat Closed B</option>
                  <option value = "3">Hihat Closed C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Hihat Open A</option>
                  <option value = "2">Hihat Open B</option>
                  <option value = "3">Hihat Open C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Tom1 A</option>
                  <option value = "2">Tom1 B</option>
                  <option value = "3">Tom1 C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Tom2 A</option>
                  <option value = "2">Tom2 B</option>
                  <option value = "3">Tom2 C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Tom3 A</option>
                  <option value = "2">Tom3 B</option>
                  <option value = "3">Tom3 C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Crash A</option>
                  <option value = "2">Crash B</option>
                  <option value = "3">Crash C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Ride A</option>
                  <option value = "2">Ride B</option>
                  <option value = "3">Ride C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">Woods A</option>
                  <option value = "2">Woods B</option>
                  <option value = "3">Woods C</option>
             </select>
-          </div>
+          </section>
 
-          <div class = "dropDowns">
+          <section class = "dropDowns">
             <select class = "dDs">
                  <option value = "1">FX A</option>
                  <option value = "2">FX B</option>
                  <option value = "3">FX C</option>
             </select>
-          </div>
+          </section>
 <!--Die Codeminimierung mittels PHP ist hier nicht ohne weiteres möglich,
 da jeder "Kanal" individuell arbeitet.-->
 
@@ -140,7 +140,7 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 -->
 
         <!-- TriggerPadSection -->
-        <div id= "TriggerPadSection">
+        <section id= "TriggerPadSection">
           <input id = "triggerKick" class = "triggers" value="X" readonly>
           <input id = "triggerSnare" class = "triggers" value="Y" readonly>
           <input id = "triggerClaps" class = "triggers" value="U" readonly>
@@ -153,7 +153,7 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
           <input id = "triggerRide" class = "triggers" value="I" readonly>
           <input id = "triggerWoods" class = "triggers" value="T" readonly>
           <input id = "triggerFX" class = "triggers" value="E" readonly>
-        </div>
+        </section>
 
 		<!--
 		=== Feedback Alpers, Feb 12 ===
@@ -167,7 +167,7 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 		-->
 
         <!-- FaderSection-->
-        <div id = "faderSection">
+        <section id = "faderSection">
           <input id=faderKick type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume1 for=faderKick ></output>
           <input id=faderSnare type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
@@ -192,11 +192,11 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
           <output id=volume2 for=faderWoods ></output>
           <input id=faderFX type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
           <output id=volume2 for=faderFX ></output>
-        </div>
+        </section>
 
         <!--PanningSection-->
 
-        <div id = "panningSection">
+        <section id = "panningSection">
           <input id=panKick type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
           <output id=volume1 for=panKick ></output>
           <input id=panSnare type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
@@ -221,13 +221,13 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
           <output id=volume2 for=panWoods ></output>
           <input id=panFX type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
           <output id=volume2 for=panFX ></output>
-        </div>
+        </section>
 
         <!--GlobalSection-->
-          <div id = "globalsect"></div>
+          <section id = "globalsect"></section>
 
         <!--SequenzerSection -->
-        <div id ="SequenzerSection">
+        <section id ="SequenzerSection">
           <input id = "step1" class = "seqButtons" value="1" readonly>
           <input id = "step2" class = "seqButtons" value="2" readonly>
           <input id = "step3" class = "seqButtons" value="3" readonly>
@@ -244,8 +244,8 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
           <input id = "step14" class = "seqButtons" value="14" readonly>
           <input id = "step15" class = "seqButtons" value="15" readonly>
           <input id = "step16" class = "seqButtons" value="16" readonly>
-        </div>
-      </div>
+        </section>
+      </section>
     </figure>
   <!-- drumkey test js import, am Ende des body Tags aufgrund von DOM -->
   <script src="js/909keys.js" type="text/javascript" language="javascript"></script>
