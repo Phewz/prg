@@ -229,19 +229,15 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 
 
         <!--SequenzerSection -->
-          <section id ="SequenzerSection">
+            <section id ="SequenzerSection">
 
+<?php
+                for($i = 1; $i < 17; $i++) {
 
-              <?php
+                    echo '<input id = "step' . $i . '" class ="seqButtons" value="' . $i . '" readonly'>
 
-                        for($i = 1; $i < 17; $i++) {
-                        ?>
-                          <input id = "step<?php echo $i; ?>" class = "seqButtons" value="<?php echo $i; ?>" readonly>
-                        <?php
-                        } //end for loop
-              ?>
-
-
+                }
+?>
             </section>
           </section>
         </figure>
