@@ -2,8 +2,12 @@
                 - php funktionen für sections                                     -
                 - about.html: Internationalisierung, CSS                          - CHECK
                 - check html4 -> 5                                                - CHECK
-                - Dokumentation                                                   - 
+                - Dokumentation                                                   -
 
-Done            - Button Container in Input Container umgewandelt
+25.02.2016Done  - Button Container in Input Container umgewandelt
                 - div Container in HTML5 Container umgewandelt
                 - Internationalisierung
+29.02.2016Done  - Erste Versuche PHP integrierung
+02.03.2016Done  -
+                -
+03.03.2016Done  -

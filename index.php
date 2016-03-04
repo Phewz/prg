@@ -127,6 +127,7 @@
 <!--Die Codeminimierung mittels PHP ist hier nicht ohne weiteres möglich,
 da jeder "Kanal" individuell arbeitet.-->
 
+
 <!--
 === Feedback Alpers, Feb 12 ===
 
@@ -139,7 +140,8 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 === Feedback Alpers, Ende ===
 -->
 
-        <!-- TriggerPadSection -->
+        <!--TriggerPadSection-->
+        <!--
         <section id= "TriggerPadSection">
           <input id = "triggerKick" class = "triggers" value="X" readonly>
           <input id = "triggerSnare" class = "triggers" value="Y" readonly>
@@ -154,6 +156,74 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
           <input id = "triggerWoods" class = "triggers" value="T" readonly>
           <input id = "triggerFX" class = "triggers" value="E" readonly>
         </section>
+-->
+      <?php
+        function generateHTML($id_suffix = '', $class = 'triggers')
+        {
+            $main_array = array(
+                0 => array(
+                    'id' => 'Kick',
+                    'value' => 'X'
+                ),
+                1 => array(
+                    'id' => 'Snare',
+                    'value' => 'Y'
+                ),
+                2 => array(
+                    'id' => 'Claps',
+                    'value' => 'U'
+                ),
+                3 => array(
+                    'id' => 'HihatClosed',
+                    'value' => 'D'
+                ),
+                4 => array(
+                    'id' => 'HihatOpen',
+                    'value' => 'P'
+                ),
+                5 => array(
+                    'id' => 'Tom1',
+                    'value' => 'A'
+                ),
+                6 => array(
+                    'id' => 'Tom2',
+                    'value' => 'K'
+                ),
+                7 => array(
+                    'id' => 'Tom3',
+                    'value' => 'M'
+                ),
+                8 => array(
+                    'id' => 'Crash',
+                    'value' => 'V'
+                ),
+                9 => array(
+                    'id' => 'Ride',
+                    'value' => 'I'
+                ),
+                10 => array(
+                    'id' => 'Woods',
+                    'value' => 'T'
+                ),
+                11 => array(
+                    'id' => 'FX',
+                    'value' => 'E'
+                )
+            );
+
+            echo '<section id="TriggerPadSection">';
+            foreach ($main_array as $key => $row) {
+                echo '<input id = "' . $id_suffix . $row['id'] . '" class = "' . $class . '" value="' . $row['value'] . '" readonly>';
+            }
+            echo '</section>';
+        }
+
+/*
+generateHTML('trigger', 'triggers');
+*/
+
+      ?>
+
 
 		<!--
 		=== Feedback Alpers, Feb 12 ===
@@ -164,80 +234,54 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 		den <input>-Container.
 
 		=== Feedback Alpers, Ende ===
-		-->
+  -->
 
-        <!-- FaderSection-->
-        <section id = "faderSection">
-          <input id=faderKick type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume1 for=faderKick ></output>
-          <input id=faderSnare type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume2 for=faderSnare ></output>
-          <input id=faderClaps type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume3 for=faderClaps ></output>
-          <input id=faderHihatClosed type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume4 for=faderHihatClosed ></output>
-          <input id=faderHihatOpen type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume5 for=faderHihatOpen ></output>
-          <input id=faderTom1 type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume6 for=faderTom1 ></output>
-          <input id=faderTom2 type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume7 for=faderTom2 ></output>
-          <input id=faderTom3 type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume8 for=faderTom3 ></output>
-          <input id=faderCrash type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume9 for=faderCrash ></output>
-          <input id=faderRide type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume2 for=faderRide ></output>
-          <input id=faderWoods type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume2 for=faderWoods ></output>
-          <input id=faderFX type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
-          <output id=volume2 for=faderFX ></output>
+        <!--FaderSection-->
+
+        <section id ="faderSection">
+
+          <?php
+
+              for($i = 1; $i < 13; $i++) {
+                ?>
+                  <input id = "fader<?php echo $i; ?>" type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical" readonly>
+                  <output id = "volume<?php echo $i; ?>" for = "fader<?php echo $i; ?>" readonly></output>
+              <?php
+            } //for loop ende
+          ?>
         </section>
 
         <!--PanningSection-->
 
-        <section id = "panningSection">
-          <input id=panKick type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume1 for=panKick ></output>
-          <input id=panSnare type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume2 for=panSnare ></output>
-          <input id=panClaps type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume3 for=panClaps ></output>
-          <input id=panHihatClosed type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume4 for=panHihatClosed ></output>
-          <input id=panHihatOpen type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume5 for=panHihatOpen ></output>
-          <input id=panTom1 type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume6 for=panTom1 ></output>
-          <input id=panTom2 type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume7 for=panTom2 ></output>
-          <input id=panTom3 type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume8 for=panTom3 ></output>
-          <input id=panCrash type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume9 for=panCrash ></output>
-          <input id=panRide type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume2 for=panRide ></output>
-          <input id=panWoods type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume2 for=panWoods ></output>
-          <input id=panFX type=range min=0 min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal">
-          <output id=volume2 for=panFX ></output>
+        <section id ="panningSection">
+
+          <?php
+
+              for($i = 1; $i < 13; $i++) {
+                ?>
+                  <input id = "pan<?php echo $i; ?>" type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal" readonly>
+                  <output id = "volume<?php echo $i; ?>" for = "pan<?php echo $i; ?>" readonly></output>
+              <?php
+            } //for loop ende
+          ?>
         </section>
+
 
         <!--GlobalSection-->
           <section id = "globalsect"></section>
 
 
 
-        <!--SequenzerSection -->
+        <!--SequenzerSection-->
             <section id ="SequenzerSection">
 
               <?php
 
-                        for($i = 1; $i < 17; $i++) {
-                        ?>
-                          <input id = "step<?php echo $i; ?>" class = "seqButtons" value="<?php echo $i; ?>" readonly>
-                        <?php
-                        } //end for loop
+                  for($i = 1; $i < 17; $i++) {
+                    ?>
+                      <input id = "step<?php echo $i; ?>" class = "seqButtons" value="<?php echo $i; ?>" readonly>
+                  <?php
+                } //for loop ende
               ?>
 
             </section>
