@@ -16,21 +16,15 @@
 
     <figure id = "devicebody">
       <section id = "devicecontent">
+
+
+
         <!--SelectorSection-->
+        <!--Umschreiben in PHP Code-->
         <section id = "SelectorSection">
 
           <section id = "dropDown1" class = "dropDowns">
             <select class = "dDs">
-			<!--Position eines offenen DDMenüs lässt sich so leider nicht kontrollieren. Arbeite an einer Lösung (Stichwort <ul><li> usw.)-->
-
-			<!--
-			=== Feedback Alpers, Feb 12 ===
-
-			Das ist für Ihren Aufgabenteil irrelevant, da es eine Design-Entscheidung ist.
-
-			=== Feedback Alpers, Ende ===
-			-->
-
                  <option value = "1">Kick A</option>
                  <option value = "2">Kick B</option>
                  <option value = "3">Kick C</option>
@@ -124,6 +118,7 @@
                  <option value = "3">FX C</option>
             </select>
           </section>
+        </section
 <!--Die Codeminimierung mittels PHP ist hier nicht ohne weiteres möglich,
 da jeder "Kanal" individuell arbeitet.-->
 
@@ -141,24 +136,9 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 -->
 
         <!--TriggerPadSection-->
-        <!--
-        <section id= "TriggerPadSection">
-          <input id = "triggerKick" class = "triggers" value="X" readonly>
-          <input id = "triggerSnare" class = "triggers" value="Y" readonly>
-          <input id = "triggerClaps" class = "triggers" value="U" readonly>
-          <input id = "triggerHihatClosed" class = "triggers" value="D" readonly>
-          <input id = "triggerHihatOpen" class = "triggers" value="P" readonly>
-          <input id = "triggerTom1" class = "triggers" value="A" readonly>
-          <input id = "triggerTom2" class = "triggers" value="K" readonly>
-          <input id = "triggerTom3" class = "triggers" value="M" readonly>
-          <input id = "triggerCrash" class = "triggers" value="V" readonly>
-          <input id = "triggerRide" class = "triggers" value="I" readonly>
-          <input id = "triggerWoods" class = "triggers" value="T" readonly>
-          <input id = "triggerFX" class = "triggers" value="E" readonly>
-        </section>
--->
-      <?php
-        function generateHTML($id_suffix = '', $class = 'triggers')
+        <!--PHP Code -->
+        <?php
+        function generateHTML($id_suffix = '', $class = '')
         {
             $main_array = array(
                 0 => array(
@@ -218,11 +198,28 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
             echo '</section>';
         }
 
-/*
-generateHTML('trigger', 'triggers');
-*/
+        //Code zum auslagern:
+        //generateHTML('trigger', 'triggers');
+        ?>
 
-      ?>
+
+        <!--ALTER HTML CODE TRIGGERSECTION
+        <section id= "TriggerPadSection">
+          <input id = "triggerKick" class = "triggers" value="X" readonly>
+          <input id = "triggerSnare" class = "triggers" value="Y" readonly>
+          <input id = "triggerClaps" class = "triggers" value="U" readonly>
+          <input id = "triggerHihatClosed" class = "triggers" value="D" readonly>
+          <input id = "triggerHihatOpen" class = "triggers" value="P" readonly>
+          <input id = "triggerTom1" class = "triggers" value="A" readonly>
+          <input id = "triggerTom2" class = "triggers" value="K" readonly>
+          <input id = "triggerTom3" class = "triggers" value="M" readonly>
+          <input id = "triggerCrash" class = "triggers" value="V" readonly>
+          <input id = "triggerRide" class = "triggers" value="I" readonly>
+          <input id = "triggerWoods" class = "triggers" value="T" readonly>
+          <input id = "triggerFX" class = "triggers" value="E" readonly>
+        </section>
+-->
+
 
 
 		<!--
