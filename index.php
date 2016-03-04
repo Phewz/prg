@@ -118,7 +118,8 @@
                  <option value = "3">FX C</option>
             </select>
           </section>
-        </section
+        </section>
+
 <!--Die Codeminimierung mittels PHP ist hier nicht ohne weiteres möglich,
 da jeder "Kanal" individuell arbeitet.-->
 
@@ -241,8 +242,8 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 
               for($i = 1; $i < 13; $i++) {
                 ?>
-                  <input id = "fader<?php echo $i; ?>" type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical" readonly>
-                  <output id = "volume<?php echo $i; ?>" for = "fader<?php echo $i; ?>" readonly></output>
+                  <input id = "fader<?php echo $i; ?>" type=range min=0 max=100 value=75 step=1 onchange="outputUpdate(value)" orient="vertical">
+                  <output id = "volume<?php echo $i; ?>" for = "fader<?php echo $i; ?>"></output>
               <?php
             } //for loop ende
           ?>
@@ -256,8 +257,8 @@ for (int i = 1; i < 4; i++) return "<option value = \"", i, ...
 
               for($i = 1; $i < 13; $i++) {
                 ?>
-                  <input id = "pan<?php echo $i; ?>" type=range min=-100 max=100 value=50 step=1 onchange="outputUpdate(value)" orient="horizontal" readonly>
-                  <output id = "volume<?php echo $i; ?>" for = "pan<?php echo $i; ?>" readonly></output>
+                  <input id = "pan<?php echo $i; ?>" type=range min=-100 max=100 value=0 step=1 onchange="outputUpdate(value)" orient="horizontal">
+                  <output id = "volume<?php echo $i; ?>" for = "pan<?php echo $i; ?>"></output>
               <?php
             } //for loop ende
           ?>
